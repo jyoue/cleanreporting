@@ -38,21 +38,12 @@ main{
 }
 
 .card{
-  background: var(--card);
+  background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 18px;
+  border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 28px;
   backdrop-filter: blur(10px);
-}
-
-header{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px 18px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 22px;
 }
 
 .brand{
@@ -132,8 +123,24 @@ li{ margin: 6px 0; }
   gap: 14px;
 }
 
-@media (min-width: 820px){
-  .grid{ grid-template-columns: 1fr 1fr; }
+.header{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.site-logo{
+  height: 36px;
+  width: auto;
+  opacity: 0.8;
+}
+
+@media (max-width: 720px){
+  .site-logo{
+    height: 28px;
+  }
 }
 
 .panel{
@@ -157,5 +164,5 @@ footer{
   font-size: 0.95rem;
 }
 
-a{ color: var(--link); }
+a{ color: var(--accent); }
 a:hover{ text-decoration: underline; }
