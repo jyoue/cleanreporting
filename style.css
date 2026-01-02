@@ -46,12 +46,99 @@ main{
   backdrop-filter: blur(10px);
 }
 
+/* === TOP HEADER BAR (logo + name + tagline + actions) === */
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  padding: 16px 18px;
+  margin: -28px -28px 18px; /* edge-to-edge within card padding */
+
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.12);
+
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.topbar-left{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.site-logo{
+  height: 44px;
+  width: auto;
+  opacity: 0.9;
+  flex: 0 0 auto;
+}
+
+.topbar-title{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.site-name{
+  font-size: 1.15rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+/* override the global tagline style only inside the topbar */
+.topbar .tagline{
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar-actions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* Mobile */
+@media (max-width: 720px){
+  .topbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar-actions{
+    width: 100%;
+  }
+
+  .site-logo{
+    height: 40px;
+  }
+
+  .topbar .tagline{
+    white-space: normal;
+  }
+}
+
+/* === Rest of the page === */
 .brand{
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
+/* If you no longer use <h1> in the body, you can delete this later.
+   Leaving it in is harmless. */
 h1{
   margin: 0;
   font-size: clamp(28px, 3.2vw, 40px);
@@ -121,26 +208,6 @@ li{ margin: 6px 0; }
   display: grid;
   grid-template-columns: 1fr;
   gap: 14px;
-}
-
-.header{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 14px;
-}
-
-.site-logo{
-  height: 52px;
-  width: auto;
-  opacity: 0.85;
-}
-
-@media (max-width: 720px){
-  .site-logo{
-    height: 40px;
-  }
 }
 
 .panel{
