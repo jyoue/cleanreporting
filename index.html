@@ -8,152 +8,64 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page">
-    <header class="nav">
-      <div class="brand">
-        <span class="logo"></span>
-        <span class="brand-name">Clean Reporting</span>
+  <main>
+    <div class="card">
+      <header>
+        <div class="brand">
+          <h1>Clean Reporting</h1>
+          <p class="tagline">Spreadsheet & reporting automation for small businesses</p>
+        </div>
+
+        <div class="actions">
+          <a class="btn" href="mailto:james@cleanreporting.co.uk">Email me</a>
+          <a class="btn" href="#how">How it works</a>
+        </div>
+      </header>
+
+      <section>
+        <p>
+          I help small businesses reduce time spent on slow, manual Excel and reporting tasks.
+          No subscriptions. Just practical fixes.
+        </p>
+        <p class="small">Run by James Youens.</p>
+      </section>
+
+      <div class="grid">
+        <section class="panel">
+          <h2>What I help with</h2>
+          <ul>
+            <li>Automating monthly Excel reports</li>
+            <li>Cleaning up messy spreadsheets</li>
+            <li>File comparisons and reconciliations</li>
+            <li>Simple Power BI reports (local files)</li>
+          </ul>
+        </section>
+
+        <section class="panel" id="how">
+          <h2>How it works</h2>
+          <ol>
+            <li>You share files securely (usually via OneDrive or Google Drive)</li>
+            <li>I confirm scope and a fixed price</li>
+            <li>I deliver the finished output</li>
+            <li>Files are deleted after delivery</li>
+          </ol>
+        </section>
       </div>
-      <nav class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#process">How it works</a>
-        <a class="btn btn-primary" href="mailto:james@cleanreporting.co.uk">Email</a>
-      </nav>
-    </header>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Spreadsheet & reporting automation</p>
-          <h1>Make your monthly reports fast, reliable, and painless.</h1>
-          <p class="lead">
-            I help small businesses reduce time spent on slow, manual Excel workflows.
-            Fixed-scope work. Practical fixes. No subscriptions.
-          </p>
-
-          <div class="cta">
-            <a class="btn btn-primary" href="mailto:james@cleanreporting.co.uk">Email me</a>
-            <a class="btn btn-ghost" href="#process">See the process</a>
-          </div>
-
-          <div class="trust">
-            <div class="trust-item">
-              <div class="trust-kicker">Typical work</div>
-              <div class="trust-value">Excel reports • Comparisons • Power BI basics</div>
-            </div>
-            <div class="trust-item">
-              <div class="trust-kicker">Working style</div>
-              <div class="trust-value">Async • Clear scope • Fixed price</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="card">
-            <div class="card-title">What I can help with</div>
-
-            <ul class="feature-list">
-              <li>
-                <span class="icon">↗</span>
-                <div>
-                  <div class="feature-title">Automate monthly Excel reports</div>
-                  <div class="feature-text">Turn copy/paste processes into a repeatable output.</div>
-                </div>
-              </li>
-              <li>
-                <span class="icon">↗</span>
-                <div>
-                  <div class="feature-title">Clean up messy spreadsheets</div>
-                  <div class="feature-text">Fix structure, consistency, and reliability.</div>
-                </div>
-              </li>
-              <li>
-                <span class="icon">↗</span>
-                <div>
-                  <div class="feature-title">Compare files & reconcile changes</div>
-                  <div class="feature-text">Highlight differences, duplicates, gaps, and drift.</div>
-                </div>
-              </li>
-              <li>
-                <span class="icon">↗</span>
-                <div>
-                  <div class="feature-title">Simple Power BI (local files)</div>
-                  <div class="feature-text">A clearer view, without cloud setup.</div>
-                </div>
-              </li>
-            </ul>
-
-            <div class="card-footer">
-              <a class="btn btn-small btn-primary" href="mailto:james@cleanreporting.co.uk">Start with a quick brief</a>
-              <div class="small-note">Run by James Youens</div>
-            </div>
-          </div>
-        </div>
+      <section class="panel">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:james@cleanreporting.co.uk">james@cleanreporting.co.uk</a>
+        </p>
+        <p class="small">
+          If files are large, share a link (OneDrive / Google Drive / Dropbox / WeTransfer) rather than emailing attachments.
+        </p>
       </section>
 
-      <!-- SERVICES -->
-      <section id="services" class="section">
-        <div class="section-head">
-          <p class="eyebrow">Services</p>
-          <h2>Clear deliverables, not “ongoing consulting”.</h2>
-          <p class="muted">
-            Most jobs are a tidy handover: you send the files, I deliver the improved output.
-          </p>
-        </div>
-
-        <div class="grid-3">
-          <div class="panel">
-            <h3>Reporting automation</h3>
-            <p>Repeatable outputs from exports, templates, and messy inputs.</p>
-          </div>
-          <div class="panel">
-            <h3>Spreadsheet cleanup</h3>
-            <p>Structure, formulas, validation, and “make it hard to break”.</p>
-          </div>
-          <div class="panel">
-            <h3>Comparison & checks</h3>
-            <p>Week-on-week, month-on-month, before/after, deltas and exceptions.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROCESS -->
-      <section id="process" class="section">
-        <div class="section-head">
-          <p class="eyebrow">How it works</p>
-          <h2>Simple, secure, predictable.</h2>
-        </div>
-
-        <div class="grid-2">
-          <div class="panel">
-            <ol class="steps">
-              <li><strong>You share files securely</strong> (usually a OneDrive/Google Drive link).</li>
-              <li><strong>I confirm scope + fixed price</strong> and a turnaround date.</li>
-              <li><strong>I deliver the output</strong> (file(s) + instructions if needed).</li>
-              <li><strong>Files are deleted after delivery</strong> unless you request otherwise.</li>
-            </ol>
-          </div>
-
-          <div class="panel">
-            <h3>File sending note</h3>
-            <p class="muted">
-              Email isn’t for huge attachments. If files are large, share a link (Drive/OneDrive/Dropbox/WeTransfer).
-              Read-only access is fine.
-            </p>
-            <div class="cta">
-              <a class="btn btn-ghost" href="mailto:james@cleanreporting.co.uk">james@cleanreporting.co.uk</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FOOTER -->
-      <footer class="footer">
-        <div>© Clean Reporting</div>
-        <div class="muted">Email: <a href="mailto:james@cleanreporting.co.uk">james@cleanreporting.co.uk</a></div>
+      <footer>
+        <p>© Clean Reporting</p>
       </footer>
-    </main>
-  </div>
+    </div>
+  </main>
 </body>
 </html>
