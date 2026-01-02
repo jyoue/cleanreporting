@@ -46,15 +46,15 @@ main{
   backdrop-filter: blur(10px);
 }
 
-/* === TOP HEADER BAR (logo + name + tagline + actions) === */
+/* === TOP HEADER BAR (logo + descriptor + actions) === */
 .topbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 24px;
 
-  padding: 16px 18px;
-  margin: -28px -28px 18px; /* edge-to-edge within card padding */
+  padding: 20px 24px;
+  margin: -28px -28px 22px; /* edge-to-edge within card padding */
 
   border-bottom: 1px solid rgba(255,255,255,0.10);
   background: rgba(0,0,0,0.12);
@@ -66,48 +66,29 @@ main{
 .topbar-left{
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
   min-width: 0;
 }
 
 .site-logo{
   height: 160px;
   width: auto;
-  opacity: 0.9;
+  opacity: 0.95;
   flex: 0 0 auto;
 }
 
-.topbar-title{
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 0;
-}
-
-.site-name{
-  font-size: 1.15rem;
-  font-weight: 750;
-  letter-spacing: -0.02em;
-  color: var(--accent);
-  line-height: 1.1;
-}
-
-/* override the global tagline style only inside the topbar */
-.topbar .tagline{
-  margin: 0;
+.descriptor{
+  max-width: 320px;
   color: var(--muted);
   font-size: 0.95rem;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.4;
 }
 
 .topbar-actions{
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /* Mobile */
@@ -115,18 +96,22 @@ main{
   .topbar{
     flex-direction: column;
     align-items: flex-start;
+    gap: 16px;
   }
 
   .topbar-actions{
     width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .site-logo{
-    height: 52px;
+    height: 120px;
   }
 
-  .topbar .tagline{
-    white-space: normal;
+  .descriptor{
+    max-width: none;
   }
 }
 
