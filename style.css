@@ -71,7 +71,7 @@ main{
 }
 
 .site-logo{
-  height: 44px;
+  height: 64px;
   width: auto;
   opacity: 0.9;
   flex: 0 0 auto;
@@ -122,7 +122,7 @@ main{
   }
 
   .site-logo{
-    height: 40px;
+    height: 52px;
   }
 
   .topbar .tagline{
